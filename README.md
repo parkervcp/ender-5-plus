@@ -10,6 +10,8 @@
 * Extruder: https://www.bondtech.se/product/bondtech-ddx-for-creality-ender-cr-10s/
 * Bed: https://preciseprinterparts.com/creality-ender-5-plus--cast-printer-bed.html
 * Heater: https://keenovo.store/collections/custom-keenovo-silicone-heaters/products/keenovo-silicone-heater-370mm-x-375mm-for-ender-5-plus-3d-printer-build-plate-heatbed-heating-upgrade
+* Anti-Backlash Nuts: https://smile.amazon.com/gp/product/B07XYR3F4C
+* Springs for Nuts: https://smile.amazon.com/gp/product/B09N6NJR3B
 
 ## Software
 ### Marlin
