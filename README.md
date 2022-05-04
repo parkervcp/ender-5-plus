@@ -7,7 +7,8 @@
 ### Replacement Parts
 * Mainboard: https://www.biqu.equipment/products/bigtreetech-skr-2
 * Touchscreen: https://www.biqu.equipment/products/btt-tft35-e3-v3-0-display-touch-screen-two-working-modes
-* Extruder: https://www.bondtech.se/product/bondtech-ddx-for-creality-ender-cr-10s/
+* Extruder: https://store.micro-swiss.com/products/micro-swiss-direct-drive-extruder-for-creality-ender-5
+* Extruder Stepper: https://www.amazon.com/Usongshine-nema17-3/dp/B089RBV837
 * Bed: https://preciseprinterparts.com/creality-ender-5-plus--cast-printer-bed.html
 * Heater: https://keenovo.store/collections/custom-keenovo-silicone-heaters/products/keenovo-silicone-heater-370mm-x-375mm-for-ender-5-plus-3d-printer-build-plate-heatbed-heating-upgrade
 * Anti-Backlash Nuts: https://smile.amazon.com/gp/product/B07XYR3F4C
