@@ -931,8 +931,8 @@
  *                                      X, Y, Z [, I [, J [, K]]], E0 [, E1[, E2...]]
  */
 
-// P-EDIT Set Z (800) and e (425) steps
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 425 }
+// P-EDIT Set Z (800) and e (200) steps
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 200 }
 
 /**
  * Default Max Feed Rate (mm/s)
