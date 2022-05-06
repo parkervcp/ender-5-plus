@@ -10,8 +10,8 @@ define Z2_DRIVER_TYPE TMC2209
 define E0_DRIVER_TYPE TMC2209
 ```
 
-## Set Z (800) and e (425) steps
-`define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 425 }`
+## Set Z (800) and e (138) steps
+`define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 138 }`
 
 ## Disable endstop pin and use BLTouch
 ```
@@ -93,3 +93,13 @@ define Z_SAFE_HOMING_Y_POINT ((Y_BED_SIZE) / 2 )  // Y point for Z homing
 
 ## enable for tft35 e3 v3.0
 `define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER`
+
+## Enable for RGB LED
+
+`#define BLINKM`
+
+`#define NEOPIXEL_LED`
+
+`#define NEOPIXEL_PIXELS 56`
+
+`#define NEOPIXEL_STARTUP_TEST`
