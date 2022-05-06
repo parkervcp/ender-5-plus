@@ -18,6 +18,9 @@
 * Heater: https://keenovo.store/collections/custom-keenovo-silicone-heaters/products/keenovo-silicone-heater-370mm-x-375mm-for-ender-5-plus-3d-printer-build-plate-heatbed-heating-upgrade
 * Anti-Backlash Nuts: https://smile.amazon.com/gp/product/B07XYR3F4C
 * Springs for Nuts: https://smile.amazon.com/gp/product/B09N6NJR3B
+* Mag Base: https://www.th3dstudio.com/product/ezflex-magnetic-base/?attribute_size=376x370mm
+* Smooth Plate: https://www.th3dstudio.com/product/ezflex2-flex-plate-smooth-or-textured-pei-coating/?attribute_plate-size=376x370mm&attribute_surface-type=Smooth+PEI
+* Textured Plate: https://www.matterhackers.com/store/l/layerlock-powder-coated-pei-build-plate-steel-sheet/sk/M92RDWH7
 #### Lighting
 * LED channel: https://smile.amazon.com/gp/product/B078J143MN
 * LEDs: https://smile.amazon.com/gp/product/B07KYP4Z3H
