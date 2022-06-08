@@ -32,7 +32,7 @@ define X_CURRENT       1000        // (mA) RMS current. Multiply by 1.414 for pe
 define Y_CURRENT       1000
 define Z_CURRENT       1000
 define Z2_CURRENT      1000
-define E0_CURRENT      700
+define E0_CURRENT      1000
 ```  
 
 ## needed for print pausing
