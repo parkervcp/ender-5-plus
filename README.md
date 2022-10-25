@@ -4,6 +4,8 @@ This is my heavily modified ender 5 plus setup. I am also storing models here fo
 
 I have listed out all the parts and software changes I have made to the printer as well.
 
+I am still working on moving the runout sensor to right above the hotend so I get more feed before running out, as I am trying to cut back on potential waste.
+
 ## Hardware
 ### Base Hardware
 * Ender 5 Plus: https://www.creality3dofficial.com/products/creality-ender-5-plus-3d-printer
@@ -17,7 +19,8 @@ I have listed out all the parts and software changes I have made to the printer 
     * Stock screen isn't compatible with the skr 2
 
 #### Hotend Hardware
-* Extruder: https://e3d-online.com/products/revo-hemera
+* Hotend Carriage: https://www.amazon.com/gp/product/B08LNKZ119 (Only using the backplate drilling out the holes for the mount plate)
+* Extruder/Hotend: https://e3d-online.com/products/revo-hemera
     * Better extruder with the revo hotend for easy swapping.
 
 #### Bed Hardware
@@ -48,7 +51,9 @@ Changes are documented in the [marlin](marlin/) folder
 ## Models
 ### Lighting
 Lighting for either the enclosure or printer
-* Channel mounting clips: (models/e5p-enclosure-lighting-mount.stl)
-* Hotend mount: 
-* BL/CR Touch mount:
+* Channel mounting clips: (models/creality-enclosure-lighting-mount.stl)
+
+### Hotend
+* Hotend mount: (models/hemera-e5p-adapter.stl) (requires heatset inserts 3 mm)
+* BL/CR Touch mount: (models/hemera-bltouch-mount.stl)
 * Cooling fan duct: https://rene-jurack.de/well-engineered-hemera-fan-duct-2/
