@@ -6,8 +6,9 @@ I have listed out all the parts and software changes I have made to the printer 
 
 I am still working on moving the runout sensor to right above the hotend so I get more feed before running out, as I am trying to cut back on potential waste.
 
-
-the current plan is to move to [Klipper](https://github.com/Klipper3d/klipper)
+## Firmware
+### Klipper
+[kilpper configs](/klipper/)
 
 ## Hardware
 ### Base Hardware
@@ -20,11 +21,21 @@ the current plan is to move to [Klipper](https://github.com/Klipper3d/klipper)
     * Better controllability and quieter operation.
 * Touchscreen: https://www.biqu.equipment/products/btt-tft35-e3-v3-0-display-touch-screen-two-working-modes
     * Stock screen isn't compatible with the skr 2
+    * [3d printed mount by jingerale79](https://www.thingiverse.com/thing:4507896)
 
 #### Hotend Hardware
-* [Custom X-Axis carriage]()
 * Extruder/Hotend: https://e3d-online.com/products/revo-hemera
     * Better extruder with the revo hotend for easy nozzle swapping.
+* Custom X-Axis carriage
+    * [using bltouch](models/x-axis/hemera-linear-mount.stl)
+    * using nozzle as probe
+        * [linear mount](models/x-axis/hemera-linear-mount-nozzle-probe.stl)
+        * [hemera mount](models/x-axis/hemera-mount-nozzle-probe.stl)
+* Part Cooling
+    * Rene Jurack's hemera cooler seen here - https://rene-jurack.de/well-engineered-hemera-fan-duct-2/
+        * the 4010 version needs to special mounts.
+        * ebmpapst 5015 blower with bltouch [mount](models/fan-mounts/hemera-bl-touch-5015-mount.stl)
+        * ebmpapst 5015 blower for nozzle probe [mount](models/fan-mounts/hemera-5015-mount.stl)
 
 #### Bed Hardware
 * Bed: https://preciseprinterparts.com/creality-ender-5-plus--cast-printer-bed.html
@@ -40,35 +51,43 @@ the current plan is to move to [Klipper](https://github.com/Klipper3d/klipper)
 * Smooth Plate: https://www.th3dstudio.com/product/ezflex2-flex-plate-smooth-or-textured-pei-coating/?attribute_plate-size=376x370mm&attribute_surface-type=Smooth+PEI
 * Textured Plate: https://www.matterhackers.com/store/l/layerlock-powder-coated-pei-build-plate-steel-sheet/sk/M92RDWH7
 
-
 #### Motion Hardware
-* [Custom Y-Axis carriages]()
 * Linear Rails: 3x450mm MGN12 Linear Rails https://smile.amazon.com/gp/product/B08JYC1XFK
 * POM Z-axis Nuts: https://smile.amazon.com/gp/product/B08JQ65PTT
     * Quieter operation
+* Drag chain - 10X20mm [Amazon Link](https://www.amazon.com/gp/product/B07SFFT1K5)
+    * [drag chain mounts](models/y-axis/dragchain/)
+* Custom Y-Axis carriages  
+    I have gotten these cut out of aluminum to handle the heat for the chamber and stepper motor.
+    * [stepper side](models/y-axis/y-axis-linear-carriage-stepper-side.stl)
+        There is an issue with the stepper potentially getting hot and warping the carriage
+    * [pulley side](models/y-axis/y-axis-linear-carriage-pully-side.stl)
 
 #### Lighting
 * LED channel: https://smile.amazon.com/gp/product/B078J143MN
 * LEDs: https://smile.amazon.com/gp/product/B07KYP4Z3H
 
-## Firmware
-### Klipper
-[kilpper configs](/klipper/)
 
 ## 3D Printed part models
 ### Hotend
-* Hotend mount: In Progress
-* BL/CR Touch mount: (models/hemera-bltouch-mount.stl)
+* BL/CR Touch mount: [bltouch mount](models/hemera-bltouch-mount.stl)
 * Cooling fan duct: https://rene-jurack.de/well-engineered-hemera-fan-duct-2/
+    * ebmpapst 5015 blower with bltouch [mount](models/fan-mounts/hemera-bl-touch-5015-mount.stl)
+    * ebmpapst 5015 blower for nozzle probe [mount](models/fan-mounts/hemera-5015-mount.stl)
 
 ### X-Carriage
-* Linear rail adapter with Hemera Mount
+I have moved the filament runout sensor to the extruder end as well. Still working on how to handle the boden
+* [linear rail mount](models/x-axis/hemera-linear-mount.stl)
+* Nozzle as proble
+    * [linear mount](models/x-axis/hemera-linear-mount-nozzle-probe.stl)
+    * [hemera mount](models/x-axis/hemera-mount-nozzle-probe.stl)
 
-### Y-Carriage
-* Motor Side Linear Rail Adapter: In Progress
-* Tensionor Side Linear Rail Adapter: In Progress
+### Y-Carriages  
+I have gotten these cut out of aluminum to handle the heat for the chamber and stepper motor.
+* [Stepper Side Linear Rail Adapter](models/y-axis/y-axis-linear-carriage-stepper-side.stl)
+* [Tensionor Side Linear Rail Adapter](models/y-axis/y-axis-linear-carriage-pully-side.stl)
 
 ### Enclosure Lighting
 Lighting for either the enclosure or printer
-* Enclosure mounting clips: (models/creality-enclosure-lighting-mount.stl)
-* 2020 Mounting Clips: In progress
+* [Enclosure mounting clips](models/creality-enclosure-lighting-mount.stl)
+* [2020 Mounting Clips]() - In progress
