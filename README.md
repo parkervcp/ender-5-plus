@@ -1,93 +1,41 @@
 # parkers ender-5-plus setup
+This is my heavily modified ender 5 plus setup.
 
-This is my heavily modified ender 5 plus setup. I am also storing models here for things that I have designed for the ender 5 first.
+> AKA The QZE5, prounounced "Queasy".
 
-I have listed out all the parts and software changes I have made to the printer as well.
+I have listed out all the parts I have used for my printer. Images will be uploaded when I get the printer fully set up in its new home.
 
-I am still working on moving the runout sensor to right above the hotend so I get more feed before running out, as I am trying to cut back on potential waste.
+## Bed Gantry
+1x [Precise Printer Parts Bed](https://preciseprinterparts.com/creality-ender-5-plus--cast-printer-bed.html)  
+4x (2 left / 2 right) [Trident MGN12H Linear Rail Mounts](https://www.printables.com/model/454574-voron-trident-z-carriage-for-mgn12h-linear-rails)  
+4x [LDO Nema 17 Stepper Motors](https://kb-3d.com/store/stepper-motors-servos/371-ldo-stepper-motor-nema-17-42sth48-2504ac-speedy-power-1651971790651.html)  
+4x [500mm Lead Screw](https://www.amazon.com/dp/B0BXH7XKFV)  
+4x 500mm MGN12 linear rails (no longer available where I got them)
 
-## Firmware
-### Klipper
-[kilpper configs](/klipper/)
-
-## Hardware
-### Base Hardware
-* Ender 5 Plus: https://www.creality3dofficial.com/products/creality-ender-5-plus-3d-printer
-* Creality Large Enclosure: https://www.creality3dofficial.com/products/large-3d-printer-enclosure
-
-### Replacement Parts
-#### Control Hardware
-* Mainboard: https://www.biqu.equipment/products/bigtreetech-skr-2
-    * Better controllability and quieter operation.
-* Touchscreen: https://www.biqu.equipment/products/btt-tft35-e3-v3-0-display-touch-screen-two-working-modes
-    * Stock screen isn't compatible with the skr 2
-    * [3d printed mount by jingerale79](https://www.thingiverse.com/thing:4507896)
-
-#### Hotend Hardware
-* Extruder/Hotend: https://e3d-online.com/products/revo-hemera
-    * Better extruder with the revo hotend for easy nozzle swapping.
-* Custom X-Axis carriage
-    * [using bltouch](models/x-axis/hemera-linear-mount.stl)
-    * using nozzle as probe
-        * [linear mount](models/x-axis/hemera-linear-mount-nozzle-probe.stl)
-        * [hemera mount](models/x-axis/hemera-mount-nozzle-probe.stl)
-* Part Cooling
-    * Rene Jurack's hemera cooler seen here - https://rene-jurack.de/well-engineered-hemera-fan-duct-2/
-        * the 4010 version needs to special mounts.
-        * ebmpapst 5015 blower with bltouch [mount](models/fan-mounts/hemera-bl-touch-5015-mount.stl)
-        * ebmpapst 5015 blower for nozzle probe [mount](models/fan-mounts/hemera-5015-mount.stl)
-
-#### Bed Hardware
-* Bed: https://preciseprinterparts.com/creality-ender-5-plus--cast-printer-bed.html
-    * Flatter base
-* Bed Levelling Standoffs: https://smile.amazon.com/gp/product/B07RZKF8MB
-    * More solid standoff
-* Heater: https://keenovo.store/collections/custom-keenovo-silicone-heaters/products/keenovo-silicone-heater-370mm-x-375mm-for-ender-5-plus-3d-printer-build-plate-heatbed-heating-upgrade
-    * Better heater for the new bed
-* Heater SSR: https://keenovo.store/collections/accessories/products/delixi-ssr-40a480vac-solid-state-relay-input-3v-32vdc-40da
-    * Controls the heater
-* Mag Base: https://www.th3dstudio.com/product/ezflex-magnetic-base/?attribute_size=376x370mm
-    * Easier to swap out beds
-* Smooth Plate: https://www.th3dstudio.com/product/ezflex2-flex-plate-smooth-or-textured-pei-coating/?attribute_plate-size=376x370mm&attribute_surface-type=Smooth+PEI
-* Textured Plate: https://www.matterhackers.com/store/l/layerlock-powder-coated-pei-build-plate-steel-sheet/sk/M92RDWH7
-
-#### Motion Hardware
-* Linear Rails: 3x450mm MGN12 Linear Rails https://smile.amazon.com/gp/product/B08JYC1XFK
-* POM Z-axis Nuts: https://smile.amazon.com/gp/product/B08JQ65PTT
-    * Quieter operation
-* Drag chain - 10X20mm [Amazon Link](https://www.amazon.com/gp/product/B07SFFT1K5)
-    * [drag chain mounts](models/y-axis/dragchain/)
-* Custom Y-Axis carriages  
-    I have gotten these cut out of aluminum to handle the heat for the chamber and stepper motor.
-    * [stepper side](models/y-axis/y-axis-linear-carriage-stepper-side.stl)
-        There is an issue with the stepper potentially getting hot and warping the carriage
-    * [pulley side](models/y-axis/y-axis-linear-carriage-pully-side.stl)
-
-#### Lighting
-* LED channel: https://smile.amazon.com/gp/product/B078J143MN
-* LEDs: https://smile.amazon.com/gp/product/B07KYP4Z3H
-
-
-## 3D Printed part models
+## X/Y Gantry
 ### Hotend
-* BL/CR Touch mount: [bltouch mount](models/hemera-bltouch-mount.stl)
-* Cooling fan duct: https://rene-jurack.de/well-engineered-hemera-fan-duct-2/
-    * ebmpapst 5015 blower with bltouch [mount](models/fan-mounts/hemera-bl-touch-5015-mount.stl)
-    * ebmpapst 5015 blower for nozzle probe [mount](models/fan-mounts/hemera-5015-mount.stl)
+[E34M1 Toolhead](https://jon-harper.github.io/E34M1/)  
+[BTT EBB42](https://biqu.equipment/products/bigtreetech-ebb-36-42-can-bus-for-bigtreetech-ebb-36-42-can-bus-u2c-v2-1-for-connecting-klipper-expansion-device-support-pt1000connecting-klipper-expansion-device?variant=42238091853922)  
+EBB42 mount is currently a [modified version of this](https://www.printables.com/model/409861-btt-ebb42-mount-eva-3x-orbiter-2x-lgx-lite-sherpa-)   
+[LDO Orbiter Extruder](https://kb-3d.com/store/extruders-hotends/414-ldo-orbiter-v25-extruder-1639531882962.html) with the smart filament sensor  
+[Triangle Labs Standard Flow Dragon Hotend](https://trianglelab.net/products/dragon-hotend?VariantsId=11398)  
+[BTT Eddy](https://biqu.equipment/products/bigtreetech-eddy?srsltid=AfmBOoo-BzEePgRbXYfmypFmxz1D7V6GJf8Ia7pA9ZbezVJH0c1i46Fz) via can bus on the EBB42  
+[ebmpapst Cooling Fan](https://www.amazon.com/dp/B017U3TW1C), this is beyond overkill  
 
-### X-Carriage
-I have moved the filament runout sensor to the extruder end as well. Still working on how to handle the boden
-* [linear rail mount](models/x-axis/hemera-linear-mount.stl)
-* Nozzle as proble
-    * [linear mount](models/x-axis/hemera-linear-mount-nozzle-probe.stl)
-    * [hemera mount](models/x-axis/hemera-mount-nozzle-probe.stl)
+### Motion
+[Blurolls Machined Conversion Kit](https://www.blurolls3d.com/products/blurolls-mercury-one1-zero-g-creality-ender5-3d-printer-mercury11-core-xy-aluminum-alloy-cnc-machined-conversion-upgrade-kit)  
+2x [LDO Nema 17 Stepper Motors](https://kb-3d.com/store/stepper-motors-servos/371-ldo-stepper-motor-nema-17-42sth48-2504ac-speedy-power-1651971790651.html)  
 
-### Y-Carriages  
-I have gotten these cut out of aluminum to handle the heat for the chamber and stepper motor.
-* [Stepper Side Linear Rail Adapter](models/y-axis/y-axis-linear-carriage-stepper-side.stl)
-* [Tensionor Side Linear Rail Adapter](models/y-axis/y-axis-linear-carriage-pully-side.stl)
+## Electronics
+[BTT Octopus Max EZ](https://biqu.equipment/products/bigtreetech-btt-octopusmax-ez-for-3d-printer)  
+[BTT U2C USB to CAN Adapter](https://kb-3d.com/store/controllers-displays-drivers/788-bigtreetech-u2c-v21-usb-to-can-bus-adapter-pcb-1674401555972.html)  
+[BTT CEB CAN Expansion Board](https://kb-3d.com/store/btt/1354-bigtreetech-ceb-v1-canbus-expansion-board-1030000147555.html)  
+[Mean Well lrs-350-24 PSU](https://www.trcelectronics.com/products/mean-well-lrs-350-24)  
+[Mean Well RS-25-5 PSU](https://www.amazon.com/dp/B00DECXUD0)  
+[Switched IEC Outlet](https://www.amazon.com/dp/B09LGX9MQX)  
 
-### Enclosure Lighting
-Lighting for either the enclosure or printer
-* [Enclosure mounting clips](models/creality-enclosure-lighting-mount.stl)
-* [2020 Mounting Clips]() - In progress
+## Base
+I use the stock skirt with a modded part with keystone mounts 
+
+[Stock Skirt](https://github.com/ZeroGDesign/docs/tree/gh-pages/docs/assets/stl/electronics_enclosure/skirt)  
+[Skirt for Switched IEC and Keystone](https://www.printables.com/model/683620-zerog-ender-5-plus-skirt-with-keystone) for ethernet and usb access  
